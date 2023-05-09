@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header class="row navbar navbar-light bg-light fixed-top">
+                <div
+                    class="col-4 col-sm-4 col-md-6 d-flex align-items-center align-items-baseline mt-1 justify-content-center"
+                >
+                    <i class="fab fa-instagram fa-2x"></i>
+                    <a href="index2.html?#" class="text-decoration-none">
+                        <h3
+                            class="fst-italic ml-2 text-decoration-none"
+                            style="color: black"
+                        >
+                            Instagram
+                        </h3>
+                    </a>
+                </div>
+                <div
+                    class="col-6 col-sm-6 col-md-4 d-flex justify-content-end text-nowrap"
+                >
+                    <button
+                        type="button"
+                        class="btn btn-success"
+                        data-toggle="modal"
+                        data-target="#exampleModal"
+                    >
+                        Create a new post
+                    </button>
+                </div>
+
+                <!-- dropdown -->
+                <div class="col-2 col-sm-2 col-md-2 mr-auto">
+                    <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        ><i class="fas fa-cog"></i
+                    ></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Log Out</a>
+                    </div>
+                </div>
+            </header>
+            <!--modal-->
+            <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <textarea
+                                class="form-control mr-sm-2"
+                                name="ml-2 mr-2"
+                                id="ml-2 mr-2"
+                                cols="50"
+                                rows="5"
+                            ></textarea>
+                            <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                            >
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <i class="fas fa-camera"></i>
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-outline-secondary"
+                                data-dismiss="modal"
+                            >
+                                Cancel
+                            </button>
+                            <button type="button" class="btn btn-success">Publish</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 mb-5"></div>
+        <div class="container d-flex justify-content-center">
+            <ul class="nav nav-pills mt-5" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a
+                        class="nav-link active btn btn-secondary"
+                        id="pills-home-tab"
+                        data-toggle="pill"
+                        href="index2.html?#"
+                        role="tab"
+                        aria-controls="pills-home"
+                        aria-selected="true"
+                    >
+                        <i class="fas fa-th fa-xs"></i
+                    ></a>
+                    <!--He metido las imagenes abajo-->
+                </li>
+                <li class="nav-item ml-3">
+                    <a
+                        class="nav-link btn btn-secondary"
+                        id="pills-profile-tab"
+                        data-toggle="pill"
+                        href="index3.html"
+                        role="tab"
+                        aria-controls="pills-profile"
+                        aria-selected="false"
+                    >
+                        <i class="fas fa-square fa-xs"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--pills fotos-->
+
+        <!--card-->
+        <div
+            class="tab-pane d-none d-flex justify-content-center my-4"
+            id="pills-profile"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+        >
+            <div class="card" style="width: 70%">
+                <div
+                    class="d-flex justify-content-between align-items-baseline bg-light px-2 pt-3"
+                >
+                    <h4 class="ml-2 mr-2">SEA</h4>
+                    <p class="ml-2 mr-2">8/8/21</p>
+                </div>
+                <img
+                    src="https://images.pexels.com/photos/3560168/pexels-photo-3560168.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt=""
+                    class="card-img-top"
+                    alt="..."
+                />
+                <div class="card-body">
+                    <div class="d-flex">
+                        <h5 class="card-title">SEA &nbsp;</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                        </p>
+                    </div>
+                    <div class="ml-2 mr-2">
+                        <p><strong>SARA</strong> LINA</p>
+                    </div>
+                    <p class="text-secondary">18 Comments more</p>
+                    <hr />
+                    <div class="input-group">
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Add a comment"
+                            aria-label="ml-2 mr-2"
+                            aria-describedby="basic-addon1"
+                        />
+                        <div class="input-group-append">
+                            <button class="btn btn-success" type="button">SEND</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="tab-pane d-none d-flex justify-content-center my-4"
+            id="pills-profile"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+        >
+            <div class="card" style="width: 70%">
+                <div
+                    class="d-flex justify-content-between align-items-baseline bg-light px-2 pt-3"
+                >
+                    <h4 class="ml-2 mr-2">MY OFFICE</h4>
+                    <p class="ml-2 mr-2">12/9/21</p>
+                </div>
+                <img
+                    src="https://images.pexels.com/photos/2312369/pexels-photo-2312369.jpeg?cs=srgb&dl=pexels-andrew-neel-2312369.jpg&fm=jpg" alt=""
+                    alt="..."
+                />
+                <div class="card-body">
+                    <div class="d-flex">
+                        <h5 class="card-title">ANDRES &nbsp;</h5>
+                        <p class="card-text">I LOVE MY SPACE</p>
+                    </div>
+                    <div class="ml-2 mr-2">
+                        <p><strong>JOHN</strong> thats nice!</p>
+                    </div>
+                    <p class="text-secondary">3 comment more</p>
+                    <hr />
+                    <div class="input-group">
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Add a comment"
+                            aria-label="ml-2 mr-2"
+                            aria-describedby="basic-addon1"
+                        />
+                        <div class="input-group-append">
+                            <button class="btn btn-success" type="button">SEND</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="tab-pane d-none d-flex justify-content-center my-4"
+            id="pills-profile"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+        >
+            <div class="card" style="width: 70%">
+                <div
+                    class="d-flex justify-content-between align-items-baseline bg-light px-2 pt-3"
+                >
+                    <h4 class="ml-2 mr-2">THE BEACH</h4>
+                    <p class="ml-2 mr-2">29/12/21</p>
+                </div>
+                <img
+                    src="https://images.pexels.com/photos/1705254/pexels-photo-1705254.jpeg?cs=srgb&dl=pexels-damon-hall-1705254.jpg&fm=jpg" alt=""
+                    alt="..."
+                />
+                <div class="card-body">
+                    <div class="d-flex">
+                        <h5 class="card-title">Tonny &nbsp;</h5>
+                        <p class="card-text">using my drone</p>
+                    </div>
+                    <div class="ml-2 mr-2">
+                        <p><strong>Jack</strong> Next time i come with you?!</p>
+                    </div>
+                    <p class="text-secondary">11029 Comments more</p>
+                    <hr />
+                    <div class="input-group">
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Add a comment"
+                            aria-label="ml-2 mr-2"
+                            aria-describedby="basic-addon1"
+                        />
+                        <div class="input-group-append">
+                            <button class="btn btn-success" type="button">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
